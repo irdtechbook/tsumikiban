@@ -14,59 +14,59 @@
 ## 積み基板遍歴
 入手したきっかけを思い出しながら自宅の「積み基板」をリストアップすると、以下に列挙するボードが目に入りましたが、これ以外にもっとあるかもしれません。(汗;
 
-### ラズパイ[^rasPi] 大量
+### ラズパイ大量
 
-Linux系つながりで初期から使い始める。ソーシャルロボット「マグボット 」[^mugbot]の展示[^blog]のために大量購入する。主催するハンズオンイベントで使用。DonkeyCar[^donkeycar]走行会[^donkeycarevent]で使用。
+Linux系つながりで初期から使い始める。ソーシャルロボット「マグボット 」[^mugbot]の展示[^blog]のために大量購入する。主催するハンズオンイベントで使用。DonkeyCar[^donkeycar]走行会[^donkeycarevent]で使用。[^rasPi] 
 
-### Intel Edison[^intelEdison]
+### Intel Edison
 
-Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPepper[^pepper]との連携で使用。当時はWi-Fi＋Bluetooth機能で一択。残念ながら製造中止になる。
+Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPepper[^pepper]との連携で使用。当時はWi-Fi＋Bluetooth機能で一択。残念ながら製造中止になる。[^intelEdison]
 
-### Wio Node （ESP8266）[^wioNode]
+### Wio Node （ESP8266）
 
-野良ハック活動初期のメイン基板として使用。Wi-Fi機能とGrove[^Grove]コネクタを使用。
+野良ハック活動初期のメイン基板として使用。Wi-Fi機能とGrove[^Grove]コネクタを使用。[^wioNode]
 
 ### ESP32 Dev Board
 
 ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついていることが話題になる。
 
-### NefryBT[^nefryBT]
+### NefryBT
 
-FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。
+FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。[^nefryBT]
 
-### TWELITE[^twilite] とZigbee[^zigbee]
-屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。電池駆動のメッシュ通信でアンカーにはラズパイを使用。
+### TWELITE とZigbee
+屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。[^twilite]電池駆動のメッシュ通信でアンカーにはラズパイを使用。[^zigbee]
 
-### がじぇっとるねさす[^gadgetrecesas] 
+### がじぇっとるねさす
 
-「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。
+「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。[^gadgetrecesas] 
 
 ### Arduino UNO（SORACOMイベントの参加賞の抽選でもらう。）
 ### Arduino Pro Micro（自作キーボードに使用。）
 ### Arduino UNO（中華製）（作品展示、バラマキ用に購入。）
-### obniz （ESP32）[^obniz]
+### obniz （ESP32）
 
-ウェブ系つながりから使い始める。組み込みデバイスのコーディングが不要なのが特徴。
+ウェブ系つながりから使い始める。組み込みデバイスのコーディングが不要なのが特徴。[^obniz]
 
-### M5Stack （ESP32）[^m5stack]
+### M5Stack （ESP32）
 
-ガワ（ケース）がしっかりしていて、安価で種類が豊富。日本のコミュニティが盛り上がっている。
+ガワ（ケース）がしっかりしていて、安価で種類が豊富。日本のコミュニティが盛り上がっている。[^m5stack]
 
-### Jetson （Nano、Xavier NX）[^jetson]
+### Jetson （Nano、Xavier NX）
 
-ラズパイ＋GPU、NVIDIAグラフィックボードの印象から使い始める。
+ラズパイ＋GPU、NVIDIAグラフィックボードの印象から使い始める。[^jetson]
 
-### Makeblock mBot[^makeblock]
+### Makeblock mBot
 
-子供向け教育教材として購入。中身はArduino。
+子供向け教育教材として購入。中身はArduino。[^makeblock]
 
-### Micro:bit[^microbit] 
+### Micro:bit
 
-子供に渡す目的で購入。Nordic nRF51822チップが搭載されている。
+子供に渡す目的で購入。Nordic nRF51822チップが搭載されている。[^microbit] 
 
-### MDBT42Q[^mdbt] 
+### MDBT42Q
 
-Nordic nRF52832チップが搭載されている。野良LEDバッジ初号機で使用。
+Nordic nRF52832チップが搭載されている。野良LEDバッジ初号機で使用。[^mdbt] 
 
 ### ラズパイPico
 
