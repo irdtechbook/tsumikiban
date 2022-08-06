@@ -101,7 +101,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
 
-![PepperにAmazon Dash Buttonを貼り付けた様子。Pepperの中にIntel Edison基板を仕込む。](images/chap-kitazaki1/pepper.jpg?scale=0.5)
+![PepperにAmazon Dash Buttonを貼り付けた様子。Pepperの中にIntel Edison基板を仕込む。](images/chap-kitazaki1/pepper.jpg)
 
 これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
 
@@ -134,9 +134,9 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * 制御（MQTT、WebSocket、DMX[^dmx]、ArtNet[^artnet]、NDI）
 * 無線（Wi-Fi、Bluetooth、Zigbee）
 
-![ワインIoT案件でTWE-Lite基板を使用](images/chap-kitazaki1/wine.jpg?scale=0.5)
+![ワインIoT案件でTWE-Lite基板を使用](images/chap-kitazaki1/wine.jpg)
 
-![カンパイシェア。グラス（江戸切子）の底面にGR-COTTON基板を仕込む。コンテスト（ルネサスデザインコンテスト2017）へ応募するために製作](images/chap-kitazaki1/kanpaishare.jpg?scale=0.3)
+![カンパイシェア。グラス（江戸切子）の底面にGR-COTTON基板を仕込む。コンテスト（ルネサスデザインコンテスト2017）へ応募するために製作](images/chap-kitazaki1/kanpaishare.jpg)
 
 [^ws2812b]: シリアル通信でRGB値が制御できる小型のマイコン内蔵LED。
 [^dekakao]: デカ顔箱 https://dailyportalz.jp/kiji/160825197264
@@ -165,7 +165,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * 気温・湿度データの表示
 * 気圧データ（時系列）の可視化
 
-![気圧データの可視化。グラフの傾きから台風の接近スピードよりも抜けるスピードの方が早いことがわかる。](images/chap-kitazaki1/ambient.jpg?scale=0.3)
+![気圧データの可視化。グラフの傾きから台風の接近スピードよりも抜けるスピードの方が早いことがわかる。](images/chap-kitazaki1/ambient.jpg)
 
 小学校の授業でも電気工作や電子工作が行われていますので、親子で一緒に取り組むのも良いと思います。
 
@@ -188,7 +188,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
     * ペットフードディスペンサーをIoT化
     * かき氷器をIoT化
 
-![ドリンクディスペンサー（サングリア）をIoT化。Wio Node基板を仕込み、スマートスピーカーからサーボモーターを駆動。](images/chap-kitazaki1/iotdrink.png?scale=0.3)
+![ドリンクディスペンサー（サングリア）をIoT化。Wio Node基板を仕込み、スマートスピーカーからサーボモーターを駆動。](images/chap-kitazaki1/iotdrink.png)
 
 「Lチカ」、LEDの延長線で、光モノ系へ進むのも楽しいと思います。
 
@@ -207,7 +207,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
         * サングリア
     * 「カウントダウンだけで宴会は盛り上がる」をIoT化
 
-![「カウントダウンだけで宴会は盛り上がる」をIoT化。Wio Node基板を仕込み、カウントダウンに合わせてギヤードモーターを操作してクラッカーを発射！](images/chap-kitazaki1/peppercountdown.png?scale=0.5)
+![「カウントダウンだけで宴会は盛り上がる」をIoT化。Wio Node基板を仕込み、カウントダウンに合わせてギヤードモーターを操作してクラッカーを発射！](images/chap-kitazaki1/peppercountdown.png)
 
 音と映像を組み合わせたメディアアート系、配信技術を組み合わせるのも面白いと思います。
 
@@ -215,7 +215,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * 映像系
 * 制御系
 
-![DMX、ArtNetで照明機器を操作し、TouchDesignerを使用して音声、映像の配信制御を行う。](images/chap-kitazaki1/mediacontrol.png?scale=0.5)
+![DMX、ArtNetで照明機器を操作し、TouchDesignerを使用して音声、映像の配信制御を行う。](images/chap-kitazaki1/mediacontrol.png)
 
 ## 積み基板が増える原因を考える
 
@@ -258,7 +258,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 仲間を作って一緒に活動すると楽しいですよね！アイデアを出して一気に「積み基板」を解消しましょう！
 
-![MFT2019で集合写真](images/chap-kitazaki1/mft2019.jpg?scale=0.5)
+![MFT2019で集合写真](images/chap-kitazaki1/mft2019.jpg)
 
 * 案件（案件に関わる、作る）
 
@@ -303,9 +303,9 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * 初心者向け電子剣山基板（LED極性なし、電流制限抵抗内蔵）
 
 
-![野良バッジ](images/chap-kitazaki1/norabadge.png?scale=0.5)
+![野良バッジ](images/chap-kitazaki1/norabadge.png)
 
-![初心者向け電子剣山基板](images/chap-kitazaki1/kenzan.png?scale=0.5)
+![初心者向け電子剣山基板](images/chap-kitazaki1/kenzan.png)
 
 [^norabadge]:  https://norahack-led.booth.pm/
 [^powermeasure]: https://bit-trade-one.co.jp/adjtsb01/

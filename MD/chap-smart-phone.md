@@ -39,7 +39,7 @@ SandboxはCodeSandboxにおけるプロジェクトの単位で、複数のフ�
 次のスクリーンショットのような画面が表示されるはずです。
 左ペインにエディター、右ペインにプレビューが表示されます。右ペイン上部に表示されるURLをスマホに共有すれば、スマートフォンでも作っているものを確認できます。
 
-![CodeSandboxの画面](images/chap-smartphone/codesandbox.png?scale=0.8)
+![CodeSandboxの画面](images/chap-smartphone/codesandbox.png)
 
 #### コラム: ローカルマシンで開発したい方は
 

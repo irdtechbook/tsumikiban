@@ -6,7 +6,7 @@
 
 画像はこう貼る。
 
-![イベントキービジュアル](images/chap-dummy/img.png?scale=0.5)
+![イベントキービジュアル](images/chap-dummy/img.png)
 
 * Retrospective
 * Refrective

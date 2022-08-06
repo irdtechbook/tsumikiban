@@ -2,7 +2,7 @@
 
 IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際のペットのエサやりどうしてる？！」という話題になったことを思い出した。うちにも野良ネコ(ゆき)が一匹いるので旅行の際はいつも悩んでいる。
 
-![ゆき](images/Recipe-IoTCatFoodDispenser/cat.png?scale=0.5)
+![ゆき](images/Recipe-IoTCatFoodDispenser/cat.png)
 
 選択肢としては、
 
@@ -36,7 +36,7 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 [^nat]: 家庭内ネットワーク(LAN)とインターネット(WAN)の間に境界(NAT)が存在し、セキュリティを確保する目的でWAN→LANのアクセスは基本的に制限されている。
 
-![技術要素と構成](images/Recipe-IoTCatFoodDispenser/components.png?scale=0.7)
+![技術要素と構成](images/Recipe-IoTCatFoodDispenser/components.png)
 
 ### 材料
 * LUSMO x 1
@@ -55,22 +55,22 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 ### 配線
 ラズパイは有線LANまたは無線Wi-Fiでネットワークへ接続する。カメラモジュールはラズパイのCAMERA端子へ接続し、サーボモーターとGroveリレーはラズパイのGPIO端子へ接続する。
 
-![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png?scale=0.7)
+![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png)
 
-![GPIO端子の結線](images/Recipe-IoTCatFoodDispenser/GPIO.png?scale=0.6)
+![GPIO端子の結線](images/Recipe-IoTCatFoodDispenser/GPIO.png)
 
 ### LUSMO内の配線
 ペットフードを入れるトレーを外し、(+)ドライバーでネジ(5箇所)を緩めてカバーを外す。
 
-![LUSMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.6)
+![LUSMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png)
 
-![LUSMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.6)
+![LUSMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png)
 
 モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルはマイナスドライバーで開け締めを行う。
 
-![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png?scale=0.6)
+![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png)
 
-![リレーへの接続](images/Recipe-IoTCatFoodDispenser/relay1.png?scale=0.5)
+![リレーへの接続](images/Recipe-IoTCatFoodDispenser/relay1.png)
 
 
 ### 使用するソフトウェア
@@ -122,13 +122,13 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 ## Node-REDフローとダッシュボード
 フローはenebularに公開しています[^noderedflow]ので、フロー作成を省略する場合はImportで取り込んでください。
 
-![Node-REDフロー全体](images/Recipe-IoTCatFoodDispenser/noderedall.png?scale=0.7)
+![Node-REDフロー全体](images/Recipe-IoTCatFoodDispenser/noderedall.png)
 
 
 ### リレースイッチフローの設定
 ダッシュボードのスイッチ「BUTTON」を押すとmsg.payloadに1が設定されてpi-gpiod outノード「リレースイッチ」がONになる。また、同時にdelayノードで1秒遅延させた後、changeノードでmsg.payloadに0が設定されてpi-gpiod outノード「リレースイッチ」がOFFになる。結果としてLUSMOのモーターが1秒間動作する。
  
-![リレーのフロー](images/Recipe-IoTCatFoodDispenser/relayflow.png?scale=0.7)
+![リレーのフロー](images/Recipe-IoTCatFoodDispenser/relayflow.png)
 
 
 ### カメラ遠隔操作フローの設定
@@ -136,9 +136,9 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
 
-![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png?scale=0.6)
+![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png)
 
-![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.4)
+![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png)
 
 
 [^noderedflow]: neko-no-moribito Flow by kitazaki published: Mar 5th 2019, 1:30 PM https://enebular.com/discover/flow/b6ffe2c9-ce5b-4896-b803-611b3ac890fd
@@ -148,7 +148,7 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 ### 静止画の設定
 ダッシュボードの「TAKE A PHOTO」を押すとカメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
 
-![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.4)
+![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png)
 
 ```html
 <script>
@@ -242,34 +242,34 @@ module.exports = {
 ### 外部公開、URL通知
 ngrokは無償プランではURLが毎回変わり、8時間で無効化されます。外出先からダッシュボードを確認するためにLINE Notifyを利用してURLを通知する。LINE NotifyノードのAccessTokenにアクセストークンを入力する。
 
-![Line notifyの設定](images/Recipe-IoTCatFoodDispenser/linenotify.png?scale=0.5)
+![Line notifyの設定](images/Recipe-IoTCatFoodDispenser/linenotify.png)
 
 
 ### 動画の設定
 ダッシュボードの「START」を押すとmulti-decoderノードがuv4l-raspicamと通信を行い動画(Motion JPEG)データを取得する。取得したデータをbase64ノードでエンコードし、ui_templateノードでHTMLへエンコードされたデータを埋め込むことでダッシュボードに動画が表示される。ダッシュボードの「STOP」を押すとchangeノードでmsg.stopにtrueが設定されてmulti-decoderノードの動作が停止する。
   
-![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png?scale=0.6)
+![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png)
 
 
 multipart-decoderノードのURLに
 http://localhost:8090/stream/video.mjpeg
 を入力する。
  
-![multiPart-decoderの設定](images/Recipe-IoTCatFoodDispenser/decodersetting.png?scale=0.5)
+![multiPart-decoderの設定](images/Recipe-IoTCatFoodDispenser/decodersetting.png)
 
 
 
-![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.5)
+![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png)
 
 ```html
 <img width="16" height="16" src="data:image/jpg;base64,{{msg.payload}}" />
 ```
 
  
-![changeノードでmsg.stopにtrueを設定する](images/Recipe-IoTCatFoodDispenser/stop.png?scale=0.7) 
+![changeノードでmsg.stopにtrueを設定する](images/Recipe-IoTCatFoodDispenser/stop.png) 
 
 ## まとめ
 
 カメラマウントにネコじゃらしを付けてみました。サーボモーターを動かしてカメラマウントを上下左右に振るとネコが寄ってくるので、タイミングを合わせてカメラで写真を撮ったり、動画で遊んでいる様子を見ることができる。やり過ぎてネコに装置を破壊されないようにくれぐれもご注意を！
 
-![ネコじゃらしをつけてみた](images/Recipe-IoTCatFoodDispenser/moving.png?scale=0.6)
+![ネコじゃらしをつけてみた](images/Recipe-IoTCatFoodDispenser/moving.png)
