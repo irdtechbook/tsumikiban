@@ -11,6 +11,7 @@ CHAPS:
   - chap-powersupply.re
   - chap-kiban.re
   - chap-continuous-output.re
+  - chap-ArduinoUNOSet.re
   - chap-kitazaki1.re
   - Recipe-IoTCatFoodDispenser.re
   - chap-smart-phone.re
