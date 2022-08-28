@@ -252,27 +252,20 @@ IoTを含む組込みシステムに関するハードウェアとソフトウ�
 
 他にも、色々と学べる月刊誌などもあります。代表的な所だけ触れておきましょう。
 
- * トランジスタ技術(CQ出版社)[^トランジスタ技術]
-
-[^トランジスタ技術]: https://toragi.cqpub.co.jp/
+ * トランジスタ技術(CQ出版社) https://toragi.cqpub.co.jp/
 
 電子回路関連の専門誌ですね。真っ先に思い浮かべるのがこれ！って人も多いはず。月によっては付録がついてくる号もあったりします。
 
- * Interface(CQ出版)[^interface]
+ * Interface(CQ出版) https://interface.cqpub.co.jp/
 
 ラズパイなどのボードを用いて何かを作るとき非常に参考になります。トラ技がアナログ回路を含む場合もあるのに対し、ほぼデジタルに限定している気がしますが、(広義の)マイコンを使った工作ならむしろInterfaceの方が刺さる記事が多いかもしれません。
 
-[^interface]: https://interface.cqpub.co.jp/
 
- * CQ ham radio(CQ出版社)[^CQ]
-
-[^CQ]: https://ham.cqpub.co.jp/
+ * CQ ham radio(CQ出版社) https://ham.cqpub.co.jp/
 
 上で軽く触れていたアマチュア無線の専門誌です。電源とかラジオなどの設計だとこっちのほうが載ってるかな？
 
- * 月刊I/O(工学社)[^IO]
-
-[^IO]: https://www.kohgakusha.co.jp/io/
+ * 月刊I/O(工学社) https://www.kohgakusha.co.jp/io/
 
 結構色んな話がごった煮的に乗っていて、参考になります。記事毎の話の振れ幅が大きいので端から端まで読んで楽しめるようになると横断的な能力が大分身についた状態になってるんじゃないかな～という気がする
 

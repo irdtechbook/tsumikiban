@@ -29,7 +29,7 @@
 
 セットはこんな感じのパッケージになります。ぴったり合うケースも付いてくるので大変良いですね。（すぐパーツが散らばりがちになりますからね）
 
-![Arduino UNOキット](images/chap-ArduinoUNOSet/kit.jpg?scale=1.0)
+![Arduino UNOキット](images/chap-ArduinoUNOSet/kit.jpg)
 
 なお、今現在(2022/8/7時点 筆者調べ)では上記セットは欠品している様なのですが、後継セットである *Arduinoをはじめよう「Arduino＆書籍＆部品セット」 KP-ARDST03* [^leoset] が販売されているようです。Arduinoが Arduino Leonardoになっているのでより色んな事が遊べる模様。（最大の違いは本に沿ってキーボードデバイスとか作ったりできない→できる ですね。）
 
@@ -60,7 +60,7 @@ void loop() {
 
 LEDをarduinoに繋いで……　こうじゃ！
 
-![Lチカ](images/chap-ArduinoUNOSet/led.jpg?scale=1.0)
+![Lチカ](images/chap-ArduinoUNOSet/led.jpg)
 
 チカりましたね。なおこのキットだと書籍の結構な割合の電子工作が実際に作って遊べるようです。（ようです　というのは時間がなくて遊べていないのです……）
 
@@ -72,7 +72,7 @@ LEDをarduinoに繋いで……　こうじゃ！
 
 サイトは　https://wokwi.com/　[^wokwi] になるのですが、Arduino UNOのシミュレーターも こちら[^wokwiuno] にあります。
 
-![wokwiのArduino UNOシミュレーター](images/chap-ArduinoUNOSet/wokwi.jpg?scale=1.0)
+![wokwiのArduino UNOシミュレーター](images/chap-ArduinoUNOSet/wokwi.jpg)
 
 この画面に対し、上の章で書いたスケッチを入力、LEDをつけて同様に動かしてみると……　こうなります。
 
@@ -80,7 +80,7 @@ LEDをarduinoに繋いで……　こうじゃ！
 
 [^wokwiuno]: https://wokwi.com/projects/new/arduino-uno
 
-![wokwiでもLチカさせてみた](images/chap-ArduinoUNOSet/wokwiled.jpg?scale=1.0)
+![wokwiでもLチカさせてみた](images/chap-ArduinoUNOSet/wokwiled.jpg)
 
 うぉー！　チカってる！(紙面ではチカっているのをお見せできないのが残念です！あまりに残念なのでこのページを読まれた方、ぜひWeb上でも遊んでみてくださいね！)
 
