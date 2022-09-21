@@ -1,6 +1,6 @@
 # ペットフードディスペンサーをIoT化　～製作レシピ例～
 
-IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際のペットのエサやりどうしてる？！」という話題になったことを思い出した。うちにも野良ネコ(ゆき)が一匹いるので旅行の際はいつも悩んでいる。
+IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際のペットのエサやりどうしてる？！」という話題になったことを思い出した。うちにも野良ネコ(ゆき)が一匹いるので、旅行の際はいつも悩んでいる。
 
 ![ゆき](images/Recipe-IoTCatFoodDispenser/cat.png)
 
@@ -23,7 +23,7 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 * エサやりは確実に行いたい
     * 停電時でも電池式のデジタルタイマーまたはアナログタイマーでエサやり
-    * 足りなさそうな時は遠隔からエサやり
+    * 足りなさそうなときは遠隔からエサやり
 * ネコの様子を見たい
     * カメラの映像を遠隔(スマホまたはタブレット)から確認
 * 一緒に遊んであげたい
@@ -66,7 +66,7 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 ![LUSMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png)
 
-モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルはマイナスドライバーで開け締めを行う。
+モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGroveリレーのスクリューターミナルへ接続する。スクリューターミナルはマイナスドライバーで開け締めを行う。
 
 ![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png)
 
@@ -126,15 +126,15 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 
 ### リレースイッチフローの設定
-ダッシュボードのスイッチ「BUTTON」を押すとmsg.payloadに1が設定されてpi-gpiod outノード「リレースイッチ」がONになる。また、同時にdelayノードで1秒遅延させた後、changeノードでmsg.payloadに0が設定されてpi-gpiod outノード「リレースイッチ」がOFFになる。結果としてLUSMOのモーターが1秒間動作する。
+ダッシュボードのスイッチ「BUTTON」を押すと、msg.payloadに1が設定されてpi-gpiod outノード「リレースイッチ」がONになる。また、同時にdelayノードで1秒遅延させた後、changeノードでmsg.payloadに0が設定されてpi-gpiod outノード「リレースイッチ」がOFFになる。結果としてLUSMOのモーターが1秒間動作する。
  
 ![リレーのフロー](images/Recipe-IoTCatFoodDispenser/relayflow.png)
 
 
 ### カメラ遠隔操作フローの設定
-ダッシュボードの「PAN / TILT」スライダーを左右に操作するとmsg.payloadに0〜100が設定されてchangeノードに入力される。changeノードで入力値を反転(100〜0)させた後、pi-gpiod outノード「PAN」または「TILT」に入力される。
+ダッシュボードの「PAN / TILT」スライダーを左右に操作すると、msg.payloadに0〜100が設定されてchangeノードに入力される。changeノードで入力値を反転(100〜0)させた後、pi-gpiod outノード「PAN」または「TILT」に入力される。
 
-サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
+サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのは、スライダーの動きとカメラマウントの動きを合わせるためです。
 
 ![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png)
 
@@ -146,7 +146,7 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 
 ### 静止画の設定
-ダッシュボードの「TAKE A PHOTO」を押すとカメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
+ダッシュボードの「TAKE A PHOTO」を押すと、カメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
 
 ![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png)
 
@@ -175,7 +175,7 @@ function updateF() {
 </div>
 ```
 
-写真の保存先のディレクトリを作成し、Node-RED設定ファイル(ふたつ)にディレクトリの情報を追加する。(enebularユーザーで実施する)
+写真の保存先のディレクトリを作成し、Node-RED設定ファイル(ふたつ)にディレクトリの情報を追加する(enebularユーザーで実施する)。
 
 #### ディレクトリの作成 
 
@@ -246,7 +246,7 @@ ngrokは無償プランではURLが毎回変わり、8時間で無効化され�
 
 
 ### 動画の設定
-ダッシュボードの「START」を押すとmulti-decoderノードがuv4l-raspicamと通信を行い動画(Motion JPEG)データを取得する。取得したデータをbase64ノードでエンコードし、ui_templateノードでHTMLへエンコードされたデータを埋め込むことでダッシュボードに動画が表示される。ダッシュボードの「STOP」を押すとchangeノードでmsg.stopにtrueが設定されてmulti-decoderノードの動作が停止する。
+ダッシュボードの「START」を押すとmulti-decoderノードがuv4l-raspicamと通信を行い動画(Motion JPEG)データを取得する。取得したデータをbase64ノードでエンコードし、ui_templateノードでHTMLへエンコードされたデータを埋め込むことでダッシュボードに動画が表示される。ダッシュボードの「STOP」を押すとchangeノードでmsg.stopにtrueが設定されて、multi-decoderノードの動作が停止する。
   
 ![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png)
 
@@ -270,6 +270,6 @@ http://localhost:8090/stream/video.mjpeg
 
 ## まとめ
 
-カメラマウントにネコじゃらしを付けてみました。サーボモーターを動かしてカメラマウントを上下左右に振るとネコが寄ってくるので、タイミングを合わせてカメラで写真を撮ったり、動画で遊んでいる様子を見ることができる。やり過ぎてネコに装置を破壊されないようにくれぐれもご注意を！
+カメラマウントにネコじゃらしを付けてみました。サーボモーターを動かしてカメラマウントを上下左右に振るとネコが寄ってくるので、タイミングを合わせてカメラで写真を撮ったり、動画で遊んでいる様子を見ることができる。やり過ぎてネコに装置を破壊されないように、くれぐれもご注意を！
 
 ![ネコじゃらしをつけてみた](images/Recipe-IoTCatFoodDispenser/moving.png)
