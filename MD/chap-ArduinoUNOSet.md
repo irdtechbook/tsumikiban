@@ -1,6 +1,6 @@
 # Arduinoで遊びたい人が「Arduinoをはじめよう」書籍を始めるまでの話
 
-ふーれむ@ditflame
+<div class="flushright">ふーれむ@ditflame</div>
 
 ## はじめに
 
