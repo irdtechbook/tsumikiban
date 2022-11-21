@@ -1,7 +1,7 @@
 # とある初心者の動的Lチカ（Blink）
 
 
-hiyoko Prod. せかいい(@Jewel_Flash)
+<div class="flushright">hiyoko Prod. せかいい(@Jewel_Flash)</div>
 
 
 
