@@ -1,6 +1,6 @@
 # Web技術とスマホで始める電子工作入門
 
-<div class="flushright">もっと@mottox2</div>
+もっと@mottox2
 
 基板を買わなければ、積み基板は生まれません。
 そもそも作りたいものに基板は必要でしょうか？
@@ -205,8 +205,8 @@ if (window.DeviceOrientationEvent) { // ①
 次のコードは、端末の動きを検知して、一定速度を超えたタイミングでメッセージを表示する例です。
 
 ```js
-<div id="result"></div>
-<div id="status"></div>
+<div id="result">
+<div id="status">
 <script>
   const round = (val, digit = 2) =>
     (Math.round((val * 10) ^ digit) / 10) ^ digit;

@@ -1,6 +1,6 @@
 # 電子工作における各種電源について
 
-<div class="flushright">ふーれむ@ditflame</div>
+ふーれむ@ditflame
 
 
 ## はじめに
