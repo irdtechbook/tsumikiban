@@ -21,5 +21,4 @@ CHAPS:
   - chap-newboard.re
   - chap-kitazaki2.re
 POSTDEF:
-  - contributors.re
   - postscript.re
