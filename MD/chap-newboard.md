@@ -1,7 +1,5 @@
 # 積み基板を増やそう
 
-おやかた@oyakata2438
-
 積み基板を作らないための電子工作入門という本書ですが、積み基板を増やすためのいいソースをご紹介します。
 
 https://fabcross.jp/topics/special/20211215_switchscience_2021.html
