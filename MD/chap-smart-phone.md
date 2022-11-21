@@ -205,9 +205,8 @@ if (window.DeviceOrientationEvent) { // ①
 次のコードは、端末の動きを検知して、一定速度を超えたタイミングでメッセージを表示する例です。
 
 ```js
-<div id="result"></div>
-<div id="status"></div>
-
+<div id="result">
+<div id="status">
 <script>
   const round = (val, digit = 2) =>
     (Math.round((val * 10) ^ digit) / 10) ^ digit;
