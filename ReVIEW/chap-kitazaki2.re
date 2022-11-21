@@ -2,8 +2,10 @@
 = 罪！？積みボード選手権
 
 
-IoTLT放送部(ざっきー@Zakkiea)
 
+//flushright{
+IoTLT放送部(ざっきー@Zakkiea)
+//}
 
 == はじめに
 
