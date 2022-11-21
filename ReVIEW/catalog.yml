@@ -20,6 +20,6 @@ CHAPS:
   - chap-erukiti.re
   - chap-newboard.re
   - chap-kitazaki2.re
-  - crossreview.re
-POSTDEF:
+
+  POSTDEF:
   - postscript.re
