@@ -12,7 +12,7 @@ edt: 親方Project　@oyakata2438
 date: '2021-12-31'
 secnolevel: 3
 titlepage: true
-review_version: 3
+review_version: 5.0
 texstyle:
   - reviewmacro
 texdocumentclass:
