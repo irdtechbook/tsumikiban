@@ -1,7 +1,8 @@
 = Arduinoで遊びたい人が「Arduinoをはじめよう」書籍を始めるまでの話
 
-
+//flushright{
 ふーれむ@ditflame
+//}
 
 == はじめに
 
@@ -52,6 +53,7 @@
 
 
 スケッチ(Arduino界ではソースコードのことをこう言うらしい)をこうして……
+
 
 //listnum[chap-ArduinoUNOSet-000][][c:LEDBlink]{
 const int LED = 13;

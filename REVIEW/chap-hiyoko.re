@@ -1,7 +1,8 @@
 = とある初心者の動的Lチカ（Blink）
 
-
+//flushright{
 hiyoko Prod. せかいい(@Jewel_Flash)
+//}
 
 == はじめに
 
