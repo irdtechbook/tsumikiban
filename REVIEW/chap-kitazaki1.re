@@ -22,78 +22,78 @@
 
 入手したきっかけを思い出しながら自宅の「積み基板」をリストアップすると、以下に列挙するボードが目に入りましたが、これ以外にもっとあるかもしれません。(汗;
 
-=== ラズパイ大量
+ * ラズパイ大量
 
 
 Linux系つながりで初期から使い始める。ソーシャルロボット「マグボット 」@<fn>{mugbot}の展示@<fn>{blog}のために大量購入する。主催するハンズオンイベントで使用。DonkeyCar@<fn>{donkeycar}走行会@<fn>{donkeycarevent}で使用。@<fn>{raspi} 
 
-=== Intel Edison
+ * Intel Edison
 
 
 Linux系つながりから使い始める。Amazon Dash Button@<fn>{amazondash}とPepper@<fn>{pepper}との連携で使用。当時はWi-Fi＋Bluetooth機能で一択。残念ながら製造中止になる。@<fn>{inteledison}
 
-=== Wio Node （ESP8266）
+ * Wio Node （ESP8266）
 
 
 野良ハック活動初期のメイン基板として使用。Wi-Fi機能とGrove@<fn>{grove}コネクタを使用。@<fn>{wionode}
 
-=== ESP32 Dev Board
+ *  ESP32 Dev Board
 
 
 ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついていることが話題になる。
 
-=== NefryBT
+ * NefryBT
 
 
 FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。@<fn>{nefrybt}
 
-=== TWELITE とZigbee
+ * TWELITE とZigbee
 
 
 屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。@<fn>{twilite}電池駆動のメッシュ通信でアンカーにはラズパイを使用。@<fn>{zigbee}
 
-=== がじぇっとるねさす
+ * がじぇっとるねさす
 
 
 「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。@<fn>{gadgetrecesas} 
 
-=== Arduino UNO（SORACOMイベントの参加賞の抽選でもらう）
+ * Arduino UNO（SORACOMイベントの参加賞の抽選でもらう）
 
-=== Arduino Pro Micro（自作キーボードに使用）
+ * Arduino Pro Micro（自作キーボードに使用）
 
-=== Arduino UNO（中華製）（作品展示、バラマキ用に購入）
+ * Arduino UNO（中華製）（作品展示、バラマキ用に購入）
 
-=== obniz （ESP32）
+ * obniz （ESP32）
 
 
 ウェブ系つながりから使い始める。組み込みデバイスのコーディングが不要なのが特徴。@<fn>{obniz}
 
-=== M5Stack （ESP32）
+ * M5Stack （ESP32）
 
 
 ガワ（ケース）がしっかりしていて、安価で種類が豊富。日本のコミュニティが盛り上がっている。@<fn>{m5stack}
 
-=== Jetson （Nano、Xavier NX）
+ * Jetson （Nano、Xavier NX）
 
 
 ラズパイ＋GPU、NVIDIAグラフィックボードの印象から使い始める。@<fn>{jetson}
 
-=== Makeblock mBot
+ * Makeblock mBot
 
 
 子供向け教育教材として購入。中身はArduino。@<fn>{makeblock}
 
-=== Micro:bit
+ * Micro:bit
 
 
 子供に渡す目的で購入。Nordic nRF51822チップが搭載されている。@<fn>{microbit} 
 
-=== MDBT42Q
+ * MDBT42Q
 
 
 Nordic nRF52832チップが搭載されている。野良LEDバッジ初号機で使用。@<fn>{mdbt} 
 
-=== ラズパイPico
+ * ラズパイPico
 
 
 microPython、circuitPythonなどのスクリプト言語で開発できる。
